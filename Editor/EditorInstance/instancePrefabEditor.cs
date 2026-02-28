@@ -92,8 +92,11 @@ public class instancePrefabEditor : Editor
             Handles.DrawLine(hit.point, hit.point + hit.normal * 2f);
             
             // Desenhar label com informações
+            string modoTexto = script.modoDistribuicao.ToString();
+            string projecaoTexto = script.usarProjecaoSuperficie ? "Superfície" : "Horizontal";
+
             Handles.Label(hit.point + hit.normal * 2.5f, 
-                $"Prefabs: {script.numeroDePrefabs}\nRaio: {script.raioAreaEfeito:F2}m",
+                $"Modo: {modoTexto}\nProjeção: {projecaoTexto}\nPrefabs: {script.numeroDePrefabs}\nRaio: {script.raioAreaEfeito:F2}m",
                 new GUIStyle()
                 {
                     normal = new GUIStyleState() { textColor = Color.white },
