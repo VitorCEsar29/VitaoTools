@@ -276,18 +276,6 @@ O AnimatorTeste pode ser facilmente integrado com Unity Events:
 - ✅ Validações feitas apenas quando necessário
 - ✅ Logs podem ser desabilitados em produção
 
-## Changelog
-
-### Melhorias Recentes
-- ✨ Adicionado validação de existência de parâmetros no Animator
-- ✨ Adicionados métodos `SetIntegerAll` e `SetFloatAll`
-- ✨ Adicionado método `ClearAllAnimators`
-- ✨ Melhoradas mensagens de warning e debug
-- ✨ Adicionada contagem de Animators afetados nas operações
-- ✨ Adicionado método `OnValidate` para limpeza automática
-- ✨ Organização aprimorada com Regions
-- ✨ Tooltips descritivos em todos os campos
-
 ---
 
-**Desenvolvido para VitaoTools** 🎮
+**Desenvolvido Por Vitor para VitaoTools** 🎮
