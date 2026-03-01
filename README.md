@@ -1,7 +1,6 @@
 # VitaoTools 🛠️
 
 [![Unity](https://img.shields.io/badge/Unity-2020.3+-black.svg?style=flat&logo=unity)](https://unity.com/)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Coleção de ferramentas essenciais para Unity que aceleram o desenvolvimento e simplificam tarefas comuns. VitaoTools oferece controle avançado de Animators e instanciação inteligente de prefabs com múltiplos modos de distribuição.
 
