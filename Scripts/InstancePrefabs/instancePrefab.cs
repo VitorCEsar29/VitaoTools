@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
+#region Instantiate
 public enum ModoDistribuicao
 {
     Aleatorio,
@@ -11,9 +12,15 @@ public enum ModoDistribuicao
     Circulo,
     Espiral
 }
+#endregion
+
+#region Class_Main
 
 public class instancePrefab : MonoBehaviour
 {
+
+#region Variables
+
     [Header("Configurações de Prefab")]
     [Tooltip("Prefabs a serem instanciados")]
     public GameObject[] prefabsParaInstanciar;
@@ -74,6 +81,10 @@ public class instancePrefab : MonoBehaviour
     [Tooltip("Cor do Botão ativo no Inspetor")]
     public Color corBotao;
     public Color buttonDisable;
+
+#endregion
+
+#region Methods_Position
 
     // Método chamado pelo editor para instanciar os prefabs
     public void InstanciarPrefabs(Vector3 pontoClique, Vector3 normalSuperficie)
@@ -223,6 +234,10 @@ public class instancePrefab : MonoBehaviour
         return posicoes;
     }
 
+    #endregion
+
+#region Methods_Instantiate
+
     private void InstanciarPrefabNaPosicao(Vector3 posicao, Vector3 normalSuperficie, Transform parent)
     {
         Vector3 posicaoFinal;
@@ -284,7 +299,11 @@ public class instancePrefab : MonoBehaviour
         Undo.RegisterCreatedObjectUndo(instancia, "Instanciar prefab");
         #endif
     }
-    
+
+    #endregion
+
+#region Debug_Instantiate(DrawLine,Preview)
+
     // Método para desenhar o círculo de área de efeito no editor
     public void DesenharCirculoAreaEfeito(Vector3 centro, Vector3 normal)
     {
@@ -337,4 +356,8 @@ public class instancePrefab : MonoBehaviour
         Debug.DrawLine(centro - frente, centro + frente, cor, 0.1f);
         Debug.DrawLine(centro, centro + cima, cor, 0.1f);
     }
+
+#endregion
+
 }
+#endregion
