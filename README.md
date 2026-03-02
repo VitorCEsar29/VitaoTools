@@ -2,7 +2,7 @@
 
 [![Unity](https://img.shields.io/badge/Unity-2020.3+-black.svg?style=flat&logo=unity)](https://unity.com/)
 
-Coleção de ferramentas essenciais para Unity que aceleram o desenvolvimento e simplificam tarefas comuns. VitaoTools oferece controle avançado de Animators e instanciação inteligente de prefabs com múltiplos modos de distribuição.
+Coleção de ferramentas essenciais para Unity que aceleram o desenvolvimento e simplificam tarefas comuns. VitaoTools oferece controle avançado de Animators, instanciação inteligente de prefabs com múltiplos modos de distribuição e sistema flexível de troca de câmeras.
 
 ## 📋 Índice
 
@@ -11,6 +11,7 @@ Coleção de ferramentas essenciais para Unity que aceleram o desenvolvimento e 
 - [Ferramentas Disponíveis](#-ferramentas-disponíveis)
   - [Animator Controller Tool](#1-animator-controller-tool)
   - [Instance Prefab Tool](#2-instance-prefab-tool)
+  - [CamSwitch Tool](#3-camswitch-tool)
 - [Como Usar](#-como-usar)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Contribuindo](#-contribuindo)
@@ -32,6 +33,12 @@ Coleção de ferramentas essenciais para Unity que aceleram o desenvolvimento e 
 - ✅ Posicionamento horizontal fixo
 - ✅ Configurações avançadas de rotação e escala
 - ✅ Editor customizado para Unity
+
+### CamSwitch Tool
+- ✅ Troca de câmeras por input do jogador
+- ✅ Suporte a múltiplas câmeras
+- ✅ Configuração flexível de teclas de atalho
+- ✅ Integração com Cinemachine
 
 ## 📦 Instalação
 
@@ -108,6 +115,31 @@ spawner.modoDistribuicao = ModoDistribuicao.Grade;
 ```
 
 [📖 Documentação Completa](Scripts/InstancePrefabs/README.md)
+
+---
+
+### 3. CamSwitch Tool
+
+Sistema flexível para alternância entre múltiplas câmeras através de inputs do jogador.
+
+#### Principais Recursos:
+- **Múltiplas Câmeras**: Gerencia qualquer quantidade de câmeras na cena
+- **Inputs Customizáveis**: Configure teclas de atalho personalizadas
+- **Integração com Cinemachine**: Suporte nativo para Virtual Cameras
+- **Editor Customizado**: Interface intuitiva no Inspector do Unity
+
+#### Exemplo de Uso:
+```csharp
+// Adicionar script ao GameObject
+CamSwitchPress camSwitch = gameObject.AddComponent<CamSwitchPress>();
+
+// As câmeras são configuradas no Inspector
+// Pressione as teclas configuradas para alternar entre câmeras
+```
+
+[📖 Documentação Completa](Scripts/CamSwitch/README.md)
+
+---
 
 ## 💡 Como Usar
 
