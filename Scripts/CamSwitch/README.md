@@ -443,7 +443,7 @@ if (camSwitch.GetTotalCameras() > 0)
 
 Encontrou um bug ou tem uma sugestão? 
 
-1. Abra uma [issue](https://github.com/VitorCEsar29/VitaoTools/issues)
+Abra uma [issue](https://github.com/VitorCEsar29/VitaoTools/issues)
 
 ---
 **VitaoTools** - Simplificando o desenvolvimento em Unity 🚀
