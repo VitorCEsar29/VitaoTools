@@ -116,6 +116,7 @@ spawner.modoDistribuicao = ModoDistribuicao.Grade;
 Adicione o script desejado a um GameObject na sua cena:
 - `AnimatorTeste.cs` para controle de Animators
 - `instancePrefab.cs` para instanciação de prefabs
+- `CamSwitchPress.cs` para sistema de troca de câmeras
 
 ### Passo 2: Configurar no Inspector
 Configure os parâmetros diretamente no Inspector do Unity com tooltips informativos.
@@ -131,14 +132,19 @@ VitaoTools/
 │   ├── Animator/
 │   │   ├── AnimatorTeste.cs          # Script principal do Animator Controller
 │   │   └── README.md                 # Documentação detalhada
-│   └── InstancePrefabs/
-│       ├── instancePrefab.cs         # Script principal de instanciação
+│   ├── InstancePrefabs/
+│   │   ├── instancePrefab.cs         # Script principal de instanciação
+│   │   └── README.md                 # Documentação detalhada
+│   └── CamSwitch/
+│       ├── CamSwitchPress.cs         # Script de troca de câmeras
 │       └── README.md                 # Documentação detalhada
 ├── Editor/
 │   ├── AnimatorEditor/
 │   │   └── AnimatorEditor.cs         # Editor customizado para Animator
-│   └── EditorInstance/
-│       └── instancePrefabEditor.cs   # Editor customizado para Instance
+│   ├── EditorInstance/
+│   │   └── instancePrefabEditor.cs   # Editor customizado para Instance
+│   └── EditorCamSwitch/
+│       └── CamSwitchPressEditor.cs   # Editor customizado para CamSwitch
 └── README.md                          # Este arquivo
 ```
 
