@@ -85,7 +85,7 @@ animatorController.PlayAllTrigger("Jump");
 animatorController.PlayAllBool("IsRunning", true);
 ```
 
-[📖 Documentação Completa](Scripts/Animator/README.md)
+[📖 Documentação Completa](Animator/Script/Animator/README.md)
 
 ---
 
@@ -114,7 +114,7 @@ spawner.prefabsParaInstanciar = new GameObject[] { treePrefab };
 spawner.modoDistribuicao = ModoDistribuicao.Grade;
 ```
 
-[📖 Documentação Completa](Scripts/InstancePrefabs/README.md)
+[📖 Documentação Completa](Prefabs/Script/InstancePrefabs/README.md)
 
 ---
 
@@ -137,7 +137,7 @@ CamSwitchPress camSwitch = gameObject.AddComponent<CamSwitchPress>();
 // Pressione as teclas configuradas para alternar entre câmeras
 ```
 
-[📖 Documentação Completa](Scripts/CamSwitch/README.md)
+[📖 Documentação Completa](CamSwitch/Script/CamSwitch/README.md)
 
 ---
 
