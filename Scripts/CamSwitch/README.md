@@ -439,21 +439,13 @@ if (camSwitch.GetTotalCameras() > 0)
 - **UnityEngine**: Namespace padrão do Unity
 - **Camera.main**: Requer uma câmera com tag "MainCamera" na cena
 
-### Compatibilidade
-- Unity 2020.3 ou superior
-- Funciona com qualquer tipo de collider trigger
-- Compatível com 2D e 3D
-
 ## 🤝 Contribuindo
 
 Encontrou um bug ou tem uma sugestão? 
 
 1. Abra uma [issue](https://github.com/VitorCEsar29/VitaoTools/issues)
-2. Faça um fork e envie um Pull Request
-3. Entre em contato com o desenvolvedor
 
 ---
-
 **VitaoTools** - Simplificando o desenvolvimento em Unity 🚀
 
 [← Voltar para README Principal](../../README.md)
